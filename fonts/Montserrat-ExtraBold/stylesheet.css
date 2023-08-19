@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+        url('Montserrat-ExtraBold.woff2') format('woff2'),
+        url('Montserrat-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

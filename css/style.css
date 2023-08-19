@@ -1,0 +1,818 @@
+@font-face {
+    font-family: 'Fredericka the Great';
+    src: local('Fredericka the Great'), local('FrederickatheGreat-Regular'),
+        url('../fonts/Fredericka_the_Great/FrederickatheGreat-Regular.woff2') format('woff2'),
+        url('../fonts/Fredericka_the_Great/FrederickatheGreat-Regular.woff') format('woff'),
+        url('../fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabelisa';
+    src: local('Gabelisa'),
+        url('../fonts/Gabelisa/Gabelisa.woff2') format('woff2'),
+        url('../fonts/Gabelisa/Gabelisa.woff') format('woff'),
+        url('../fonts/Gabelisa/Gabelisa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/Montserrat-Bold/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+        url('../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.woff') format('woff'),
+        url('../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/Montserrat-Regular/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 720px;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1326px;
+    margin: 0 auto;
+}
+
+.top-header-block {
+    height: 825px;
+    background: rgb(255, 223, 1);
+    background: linear-gradient(110deg, rgb(255, 223, 1) 62%, rgb(235, 233, 171) 38%);
+    margin-bottom: 85px;
+    min-width: 720px;
+    position: relative;
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header-block__logo {
+    width: 251px;
+    padding-top: 42px;
+}
+
+.header-block__item_delivery {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-block__delivery {
+    margin-right: 16px;
+    padding-top: 56px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-block__express {
+    font-size: 17px;
+}
+
+.header-block__number {
+    font-size: 29px;
+}
+
+.header-block__phone {
+    width: 25px;
+    padding-top: 50px;
+}
+
+.bread-crumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 55px;
+}
+
+.bread-crumbs__menu {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 17px;
+    width: 578px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-block {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+
+.title-block__item_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-block__question {
+    margin-bottom: 25px;
+    width: 369px;
+    height: 66px;
+}
+
+.question__text {
+    font-size: 57px;
+    color: #000000;
+    font-family: "Gabelisa";
+}
+
+.question__picture {
+    position: absolute;
+    top: -15px;
+    left: 25px;
+}
+
+.title-block__exclamation {
+    width: 568px;
+    height: 74px;
+    margin-bottom: 35px;
+}
+
+.title-block__exclamation_text {
+    font-size: 90px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+}
+
+.title-block__now {
+    width: 471px;
+    height: 74px;
+    margin-bottom: 30px;
+}
+
+.title-block__now_text {
+    font-size: 26px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat";
+    border-bottom: 2px solid rgba(0, 0, 0, 0.200);
+    padding-bottom: 40px;
+}
+
+.title-block__happy {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 290px;
+    height: 45px;
+}
+
+.title-block__hours {
+    width: 147px;
+    font-size: 19px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    margin-right: 15px;
+}
+
+.title-block__three {
+    font-size: 57px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    width: 126px;
+}
+
+.title-block__botton {
+    width: 228px;
+    height: 59px;
+    background-color: #f8171700;
+    border: 1px solid #000000;
+    font-size: 21px;
+    color: #000000;
+    font-weight: 800;
+    font-family: "Montserrat";
+}
+
+.title-block__item_picture {
+    margin-left: 70px;
+    position: relative;
+    width: 567px;
+    height: 567px;
+}
+
+.pasta {
+    position: absolute;
+    left: -50px;
+    top: -20px;
+}
+
+.tomato {
+    position: absolute;
+    left: -100px;
+    bottom: 10px;
+}
+
+.basilica {
+    position: absolute;
+    bottom: 20px;
+    right: -60px;
+}
+
+.choose-block {
+    background-color: #ffffff;
+    position: relative;
+    min-width: 720px;
+}
+
+.spaghetti {
+    position: absolute;
+    left: -135px;
+    top: -230px;
+    overflow: hidden;
+}
+
+.spaghetti img {
+    width: 305px;
+    height: 298px; 
+}
+
+.choose-block__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 165px;
+    min-width: 720px;  
+}
+
+.choose-block__enjoy {
+    width: 466px;
+    height: 40px;
+    font-size: 50px;
+    line-height: 38px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+    margin-bottom: 30px;
+}
+
+.choose-block__text {
+    width: 1082px;
+    height: 56px;
+    font-size: 17px;
+    line-height: 29px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    min-width: 720px;
+}
+
+.choose-block__dish {
+    position: relative;
+    bottom: 100px;
+    margin-bottom: 45px;
+}
+
+.choose-block__boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 5;
+}
+
+.choose-block__box {
+    display: block;
+}
+
+.choose-block__background {
+    width: 1440px;
+    height: 140px;
+    background-color: #e8e6a9;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.choose-block__food {
+    width: 370px;
+    height: 355px;
+    filter: drop-shadow(9.5px 16.454px 27px rgba(12, 13, 12, 0.67));
+}
+
+.choose-block__header {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+}
+
+.choose-block__name {
+    
+    font-size: 21px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat";
+    margin-bottom: 25px;
+}
+
+.choose-block__description {
+    width: 367px;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.choose-block__botton {
+    font-size: 21px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat";
+    width: 196px;
+    padding: 20px;
+    border: none;
+    background: #ffdf01;
+}
+
+.choose-block__drawings {
+    min-width: 720px;
+}
+
+.choose-block__drawing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.choose-block__name_size {
+    height: 16px;
+    width: 120px;
+}
+
+.choose-block__enjoy_size {
+    font-size: 42px;
+    height: 34px;
+    width: 427px;
+}
+
+.drawing {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    min-width: 720px;
+}
+
+.drawing__item {
+    display: flex;   
+    align-items: center; 
+}
+
+.drawing__food {
+    height: 300px;
+    width: 372px;
+    background: #000000c2;
+}
+
+.drawing__fd img {
+    width: 696px;
+    height: 360px;
+    filter: drop-shadow(9.5px 16.454px 27px rgba(12,13,12,0.67));
+}
+
+.drawing__dots {
+    margin-top: 20px;
+    padding: 25px;
+    margin-bottom: 105px;
+}
+
+.try-today {
+    display: flex;
+    align-items: center;
+    min-width: 720px;
+    margin-bottom: 90px;
+}
+
+.try-today__item {
+    height: 420px;
+    width: 642px;
+}
+
+.try-today__item_right {
+    margin-right: 42px;
+    background-image: url(../img/today.png); 
+    background-position-x: -70px;
+    overflow: hidden;
+}
+
+.try-today__item_left {
+    background-image: url(../img/todey1.png);
+    height: 192px;
+    width: 642px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.try-today__item_lower {
+    background-image: url(../img/todey2.png);
+    height: 192px;
+    width: 642px;
+    background-size: cover;
+    background-position: 20% 80%;
+    overflow: hidden;
+}
+
+.try-today__box {
+    font-size: 33px;
+    line-height: 38px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";   
+}
+
+.try-today__box_one {
+    width: 275px;
+    height: 161px;
+    margin: 45px 0px 0px 45px;
+}
+
+.try-today__box_two {
+    width: 275px;
+    height: 94px;
+    margin: 30px 0px 0px 30px;
+}
+
+.try-today__box_three {
+    width: 275px;
+    height: 57px;
+    margin: 30px 0px 0px 30px;
+}
+
+.try-today__text_size {
+    font-size: 25px;
+} 
+
+form {
+    display: flex;
+    justify-content: center;
+    min-width: 720px;
+}
+
+.form-block {
+    min-width: 720px;
+    margin-bottom: 100px;
+}
+
+.form-block__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.form-block__reservation {
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat";
+    margin-bottom: 20px;
+}
+
+.form-block__book {
+    font-size: 50px;
+    letter-spacing: 3px;
+    line-height: 46px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Fredericka the Great";
+}
+
+.form-block__box {
+    border: none;
+}
+
+label {
+    display: block;
+}
+
+.form-block__item {
+    padding: 10px 20px; 
+    width: 380px;
+    display: block;
+    margin: 30px 15px;
+    border-radius: 5px;
+    border: 1px solid #bebebe;
+    font-size: 17px;
+    line-height: 46px;
+    color: #3d3d3d;
+    font-weight: 400;
+    font-family: "Montserrat"
+}
+
+.form-block__item_button {
+    font-size: 21px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat";
+    border: none;
+    background: #ffdf01;
+}
+
+.last-block {
+    background-image: url(../img/last1.png);
+    height: 584px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 1442px 584px;
+    min-width: 720px;
+    background-color: rgba(0, 0, 0, 0.79); 
+}
+
+.last-block__opacity {
+    background: rgba(0, 0, 0, 0.5);
+    height: 584px;
+    min-width: 720px; 
+}
+
+.last-block__logo img {
+    margin: 66px 45px;
+}
+
+.last-block__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.last-block__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 45px;
+} 
+
+.last-block__icons_item {
+    display: flex;
+    align-items: center;
+}
+
+.icon__text {
+    font-size: 17px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding-left: 35px;
+}
+
+.icon__text_big {
+    width: 604px;
+    height: 135px;
+    padding: 14px 45px;
+}
+
+.last-block__company {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 45px;
+}
+
+.last-block__company_text {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.last-block__company_border {
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 10px;
+}                             
+
+@media (max-width: 1440px) {
+    .choose-block__background {
+        width: 100%;
+    }
+    .last-block,
+    .last-block__opacity {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1326px) {
+    .header-block {
+        justify-content: space-around;
+    }
+    .bread-crumbs {
+        justify-content: center;
+    }
+    .title-block__item_picture { 
+        margin-left: 0px;
+    }
+    .drawing__item {
+        flex-direction: column;
+    }
+    .drawing__dots {
+        margin-bottom: 60px;
+    }
+    .drawing__food {
+        height: 300px;
+        width: 640px;
+        margin-bottom: 4px;
+    }
+    .try-today {
+        flex-direction: column;
+
+    }
+    .try-today__item_right {
+        margin-right: 0px;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .top-header-block {
+        background: rgb(255, 223, 1);
+        background: linear-gradient(110deg, rgb(255, 223, 1) 29%, rgb(235, 233, 171) 71%);
+    }
+    .title-block__item_text {
+        position: relative;
+        z-index: 5;
+    }
+    .title-block__hours,
+    .title-block__three {
+        font-weight: bold;
+    }
+    .title-block__item_picture {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-48%);
+        margin-left: 0px;  
+    }
+    .plate {
+        opacity: 0.5;
+    }
+    .pasta {
+        top: 0px;
+        left: 530px;
+    }
+    .question__picture {
+        top: -35px;
+        left: -30px;
+    }
+    .tomato {
+        left: -55px;
+        bottom: 55px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .choose-block__dish {
+        margin-bottom: 0px;
+    }
+    .choose-block__box {
+        margin-bottom: 50px;
+    }
+    .choose-block__background {
+        display: none;
+    }
+    .choose-block__text {
+        height: 85px;
+        width: 720px;
+        padding: 0px 15px;
+    }
+    .last-block__box {
+        margin-bottom: 50px; 
+    }
+}
+
+@media (max-width: 1000px) {
+    .last-block__box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .last-block__icons_item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 820px) {
+    .tomato {
+       display: none;
+    }
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-block__text {
+        margin-bottom: 30px;
+    }
+    .form-block__item {
+        width: 550px;
+    }
+    .form-block__item_retreat {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 720px) {
+    .header-block__item_delivery::after {
+        content: "\f0c9";
+        font-family: "Font Awesome 6 free";
+        font-weight: 900;
+        font-size: 50px;
+        margin-left: 30px;
+        color: green;  
+    }
+    .bread-crumbs__menu {
+       display: none;
+    }
+    .bread-crumbs__menu.bread-crumbs__menu_active {
+        right: 0;
+        top: 0;
+        height: 109vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #0000009c;
+        width: 50vw;
+        position: fixed;
+        color: white;
+        z-index: 1000;
+        justify-content: space-evenly;
+        transform: scale(1);
+        transition: transform .3s;
+    }
+    .bread-crumbs__menu.bread-crumbs__menu_active:hover {
+        transform: scale(0);
+    }
+    .bread-crumbs__menu_active::after {
+        content: "\f057";
+        font-family: "Font Awesome 6 free";
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+    }
+}
