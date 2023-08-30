@@ -66,7 +66,6 @@ li {
 form {
     display: flex;
     justify-content: center;
-    /*min-width: 720px;*/
 }
 
 label {
@@ -483,19 +482,19 @@ label {
 .try-today__box_one {
     width: 275px;
     height: 161px;
-    margin: 45px 0px 0px 45px;
+    padding: 30px 0px 0px 30px;
 }
 
 .try-today__box_two {
     width: 275px;
     height: 94px;
-    margin: 30px 0px 0px 30px;
+    padding: 30px 0px 0px 30px;
 }
 
 .try-today__box_three {
     width: 275px;
     height: 57px;
-    margin: 30px 0px 0px 30px;
+    padding: 30px 0px 0px 30px;
 }
 
 .try-today__text_size {
@@ -574,7 +573,7 @@ label {
 }
 
 .last-block__logo img {
-    margin: 66px 45px;
+    padding: 66px 45px;
 }
 
 .last-block__box {
@@ -667,9 +666,9 @@ label {
     }
     .drawing__food {
         height: 300px;
-        width: 100%;
         margin-bottom: 4px;
-    }
+        width: 100%;
+    }    
     .drawing__dots {
         margin-bottom: 60px;
     }
@@ -691,6 +690,7 @@ label {
     .title-block__item_text {
         position: relative;
         z-index: 5;
+        max-width: 100%;
     }
     .title-block__hours,
     .title-block__three {
@@ -700,7 +700,6 @@ label {
         position: absolute;
         top: 50%;
         transform: translateY(-48%);
-        margin-left: 0px;  
     }
     .plate {
         opacity: 0.5;
@@ -761,11 +760,13 @@ label {
         margin-bottom: 30px;
     }
     .form-block__item {
-        width: 550px;
+        width: 100%;
+        margin: 30px 0px;
     }
     .form-block__item_retreat {
         margin-bottom: 0px;
     }
+    
 }
 
 @media (max-width: 720px) {
@@ -813,16 +814,32 @@ label {
     }
     .plate {
         position: absolute;
-        top: -21px
+        top: -21px;
     }
+    .question__picture,
+    .pasta,
+    .basilica,
     .spaghetti {
        display: none;
+    }
+    .try-today__box_one,
+    .try-today__box_two,
+    .try-today__box_three,
+    .try-today__item,
+    .try-today__item_left,
+    .try-today__item_lower {
+        width: 100%;
+    }
+    .try-today__text_size,
+    .try-today__text {
+        font-size: 4vw;
+        width: 125px;
     }
 }
 
 @media (max-width: 630px) {
     .question__text {
-        font-size: 8vw;
+        font-size: 9vw;
         text-align: center;
     }
 }
@@ -831,28 +848,103 @@ label {
     .header-block {
         flex-direction: column;
         align-items: center;
-        padding-top: 0px;
     }
-    .title-block__now_text,
+    .header-block__logo {
+        padding-top: 25px;
+    }
     .title-block__now_text,
     .title-block__three,
-    .choose-block__enjoy {
-     font-size: 8vw;
-     text-align: center;
+    .choose-block__enjoy,
+    .form-block__book {
+        font-size: 8vw;
+        text-align: center;
+        width: 100%;
+    }
+    .choose-block__name,
+    .form-block__reservation {
+        font-size: 6vw;
+        text-align: center;
+        width: 100%;
+    }
+    .choose-block__description,
+    .choose-block__botton {
+        text-align: center;
+        width: 100%;
     }
     .title-block__exclamation_text {
-        font-size: 12vw;
-       
+        font-size: 13vw;
         text-align: center;
     }
+    .title-block__hours {
+        font-size: 4vw;
+        width: 100%;
+        text-align: center;
+    }
+    .header-block__number,
+    .header-block__express,
     .title-block__now_text {
         font-size: 4vw;
     }
-    
+    .drawing__fd img {
+        width: 100%;
+        height: 360px;
+    }
+    .drawing__dots  {
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 600px) {
-    .plate img {
-        width: 500px;
+    .title-block__botton {
+        width: 170px;
+        font-size: 3vw;
+    }       
+    .choose-block__food {
+        width: 100%;
+        height: auto;
+    }
+    .header-block__delivery,
+    .title-block__question,
+    .title-block__hours,
+    .title-block__happy,
+    .title-block__item_picture,
+    .plate,
+    .plate img,
+    .title-block__exclamation,
+    .title-block__now,
+    .choose-block__header  {
+        width: 100%;
+        height: auto;
+    }
+    .try-today__item_right {
+        background-position-x: -200px;
+        background-repeat: no-repeat;
+        height: 313px;
+    }
+}
+
+@media (max-width: 450px) {
+    .try-today__item_right {
+        background-position-x: -260px;
+        background-repeat: no-repeat;
+        height: 313px;
+    }
+}
+
+@media (max-width: 400px) {
+    .top-header-block {
+        margin-bottom: 20px;
+    }
+    .choose-block__food {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 350px) {
+    .try-today__item_right {
+        background-position-x: -320px;
+        background-repeat: no-repeat;
+        height: 313px;
     }
 }
