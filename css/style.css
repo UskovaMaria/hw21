@@ -386,10 +386,6 @@ label {
     background: #ffdf01;
 }
 
-.choose-block__drawings {
-    /*min-width: 720px;*/
-}
-
 .choose-block__drawing {
     display: flex;
     flex-direction: column;
@@ -412,7 +408,6 @@ label {
     display: flex;
     align-items: center; 
     flex-direction: column;
-    /*min-width: 720px;*/
 }
 
 .drawing__item {
@@ -442,7 +437,6 @@ label {
     display: flex;
     align-items: center;
     margin-bottom: 90px;
-    /*min-width: 720px;*/
 }
 
 .try-today__item {
@@ -510,7 +504,6 @@ label {
 
 .form-block {
     margin-bottom: 100px;
-    /*min-width: 720px;*/
 }
 
 .form-block__text {
@@ -573,13 +566,11 @@ label {
     background-repeat: no-repeat;
     background-size: 1442px 584px;
     background-color: rgba(0, 0, 0, 0.79); 
-    /*min-width: 720px;*/
 }
 
 .last-block__opacity {
     background: rgba(0, 0, 0, 0.5);
     height: 584px;
-    /*min-width: 720px;*/
 }
 
 .last-block__logo img {
