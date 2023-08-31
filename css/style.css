@@ -121,7 +121,7 @@ label {
 }
 
 .header-block__phone {
-    width: 25px;
+    width: 28px;
     padding-top: 50px;
 }
 
@@ -415,14 +415,14 @@ label {
 }
 
 .drawing__food {
-    height: 300px;
-    width: 372px;
+    height: 351px;
+    width: 404px;
     background: #000000c2;
 }
 
 .drawing__fd img {
     width: 696px;
-    height: 360px;
+    height: 407px;
     filter: drop-shadow(9.5px 16.454px 27px rgba(12,13,12,0.67));
 }
 
@@ -639,9 +639,7 @@ label {
 }                             
 
 @media (max-width: 1440px) {
-    .choose-block__background {
-        width: 100%;
-    }
+    .choose-block__background, 
     .last-block,
     .last-block__opacity {
         width: 100%;
@@ -665,8 +663,7 @@ label {
         flex-direction: column;
     }
     .drawing__food {
-        height: 300px;
-        margin-bottom: 4px;
+        margin: 15px 0;
         width: 100%;
     }    
     .drawing__dots {
@@ -674,7 +671,6 @@ label {
     }
     .try-today {
         flex-direction: column;
-
     }
     .try-today__item_right {
         margin-right: 0px;
@@ -690,7 +686,7 @@ label {
     .title-block__item_text {
         position: relative;
         z-index: 5;
-        max-width: 100%;
+        text-align: center;
     }
     .title-block__hours,
     .title-block__three {
@@ -722,7 +718,8 @@ label {
     .choose-block__dish {
         margin-bottom: 0px;
     }
-    .choose-block__box {
+    .choose-block__box,
+    .last-block__box  {
         margin-bottom: 50px;
     }
     .choose-block__background {
@@ -731,10 +728,6 @@ label {
     .choose-block__text {
         height: auto;
         width: 100%;
-        padding: 0px 15px;
-    }
-    .last-block__box {
-        margin-bottom: 50px; 
     }
 }
 
@@ -760,18 +753,20 @@ label {
         margin-bottom: 30px;
     }
     .form-block__item {
-        width: 100%;
         margin: 30px 0px;
     }
     .form-block__item_retreat {
         margin-bottom: 0px;
     }
-    
 }
 
 @media (max-width: 720px) {
     .container {
         padding: 0 20px;
+    }
+    .top-header-block {
+        height: 815px;
+        margin-bottom: 60px;
     }
     .header-block__item_delivery::after {
         content: "\f0c9";
@@ -838,6 +833,14 @@ label {
 }
 
 @media (max-width: 630px) {
+    .header-block__express {
+        font-size: 2vw;
+        width: max-content;
+    }
+    .header-block__number {
+        font-size: 3vw;
+        width: max-content;
+    }
     .question__text {
         font-size: 9vw;
         text-align: center;
@@ -846,47 +849,49 @@ label {
 
 @media (max-width: 620px) {
     .header-block {
-        flex-direction: column;
-        align-items: center;
-    }
-    .header-block__logo {
-        padding-top: 25px;
-    }
-    .title-block__now_text,
-    .title-block__three,
-    .choose-block__enjoy,
-    .form-block__book {
-        font-size: 8vw;
-        text-align: center;
         width: 100%;
     }
+    .header-block__logo img {
+        width: 165px;
+    }
+    .header-block__item_delivery {
+        height: 85px;
+    }
+    .header-block__item_delivery::after {
+        font-size: 30px;
+    }
+    .title-block__hours,
+    .choose-block__food,
     .choose-block__name,
-    .form-block__reservation {
-        font-size: 6vw;
-        text-align: center;
+    .choose-block__description,
+    .choose-block__botton,
+    .form-block__reservation,
+    .drawing__fd img {
         width: 100%;
     }
+    .choose-block__food,
+    .choose-block__name,
+    .form-block__reservation,
+    .form-block__book {
+        font-size: 6vw;
+    }
+    .choose-block__food,
+    .choose-block__name,
     .choose-block__description,
-    .choose-block__botton {
+    .choose-block__botton,
+    .form-block__reservation {
         text-align: center;
-        width: 100%;
     }
     .title-block__exclamation_text {
         font-size: 13vw;
-        text-align: center;
     }
     .title-block__hours {
-        font-size: 4vw;
-        width: 100%;
-        text-align: center;
+        font-size: 3vw;
     }
-    .header-block__number,
-    .header-block__express,
     .title-block__now_text {
         font-size: 4vw;
     }
     .drawing__fd img {
-        width: 100%;
         height: 360px;
     }
     .drawing__dots  {
@@ -895,31 +900,40 @@ label {
 }
 
 @media (max-width: 600px) {
+    .title-block__hours {
+        font-size: 3vw;
+        width: max-content;
+    }
     .title-block__botton {
         width: 170px;
         font-size: 3vw;
     }       
     .choose-block__food {
-        width: 100%;
         height: auto;
     }
     .header-block__delivery,
     .title-block__question,
-    .title-block__hours,
-    .title-block__happy,
     .title-block__item_picture,
     .plate,
     .plate img,
     .title-block__exclamation,
     .title-block__now,
+    .choose-block__food,
     .choose-block__header  {
         width: 100%;
-        height: auto;
     }
     .try-today__item_right {
         background-position-x: -200px;
         background-repeat: no-repeat;
         height: 313px;
+    }
+}
+
+@media (max-width: 520px) {
+    .choose-block__enjoy {
+        font-size: 8vw;
+        text-align: center;
+        width: max-content;
     }
 }
 
