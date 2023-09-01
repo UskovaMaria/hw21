@@ -83,7 +83,7 @@ label {
     background: linear-gradient(110deg, rgb(255, 223, 1) 62%, rgb(235, 233, 171) 38%);
     margin-bottom: 85px;
     position: relative;
-    width: 1440px;
+    width: 100%;
 }
 
 .header-block {
@@ -651,7 +651,7 @@ label {
         width: 100%;
     }
     .header-block {
-        justify-content: space-around;
+        padding: 0 20px;
     }
     .bread-crumbs {
         justify-content: center;
@@ -682,6 +682,10 @@ label {
     .top-header-block {
         background: rgb(255, 223, 1);
         background: linear-gradient(110deg, rgb(255, 223, 1) 29%, rgb(235, 233, 171) 71%);
+    }
+    .header-block {
+        justify-content: space-around;
+        padding: 0;
     }
     .title-block__item_text {
         position: relative;
@@ -772,7 +776,7 @@ label {
         content: "\f0c9";
         font-family: "Font Awesome 6 free";
         font-weight: 900;
-        font-size: 50px;
+        font-size: 40px;
         margin-left: 30px;
         color: black;
     }
@@ -838,8 +842,16 @@ label {
         width: max-content;
     }
     .header-block__number {
-        font-size: 3vw;
+        font-size: 3.5vw;
         width: max-content;
+    }
+    .header-block__phone img {
+        width: 20px;
+        height: 35px;
+    }
+    .header-block__item_delivery::after {
+        font-size: 35px;
+        margin-left: 15px;
     }
     .question__text {
         font-size: 9vw;
@@ -850,9 +862,10 @@ label {
 @media (max-width: 620px) {
     .header-block {
         width: 100%;
+        align-items: flex-end;
     }
     .header-block__logo img {
-        width: 165px;
+        width: 200px;
     }
     .header-block__item_delivery {
         height: 85px;
@@ -900,9 +913,8 @@ label {
 }
 
 @media (max-width: 600px) {
-    .title-block__hours {
-        font-size: 3vw;
-        width: max-content;
+    .top-header-block {
+        height: 750px;
     }
     .title-block__botton {
         width: 170px;
@@ -930,6 +942,9 @@ label {
 }
 
 @media (max-width: 520px) {
+    .header-block__logo { 
+        width: 100%;
+    }
     .choose-block__enjoy {
         font-size: 8vw;
         text-align: center;
@@ -937,17 +952,56 @@ label {
     }
 }
 
+@media (max-width: 500px) {
+    .top-header-block {
+        height: 700px;
+    }
+}
+
 @media (max-width: 450px) {
+    .top-header-block {
+        height: 680px;
+    }
+    .header-block__logo img {
+        width: 180px;
+    }
+    .header-block__item_delivery::after {
+        font-size: 25px;
+    }
+    .bread-crumbs {
+        padding: 0;
+    }
+    .title-block__exclamation {
+        height: 60px;
+    }
+    .title-block__now {
+        height: 80px;
+    }
+    .title-block__three {
+        font-weight: 400;
+    }
     .try-today__item_right {
         background-position-x: -260px;
         background-repeat: no-repeat;
         height: 313px;
     }
+
 }
 
 @media (max-width: 400px) {
-    .top-header-block {
-        margin-bottom: 20px;
+    .header-block__logo img {
+        width: 150px;
+    }
+    .header-block__phone img {
+        width: 16px;
+        height: 29px;
+    }
+    .header-block__delivery {
+        margin-right: 8px;
+    }
+    .header-block__item_delivery::after {
+        font-size: 20px;
+        margin-left: 10px;
     }
     .choose-block__food {
         width: 100%;
@@ -956,6 +1010,13 @@ label {
 }
 
 @media (max-width: 350px) {
+    .header-block__logo img {
+        width: 130px;
+    }
+    .header-block__phone img {
+        width: 13px;
+        height: 25px;
+    }
     .try-today__item_right {
         background-position-x: -320px;
         background-repeat: no-repeat;
