@@ -832,6 +832,34 @@ label {
         font-size: 4vw;
         width: 125px;
     }
+    .last-block__logo {
+        display: flex;
+        justify-content: center;
+    }
+    .last-block__logo img {
+        padding: 60px 0 35px 0;
+        width: 200px;
+    }
+    .last-block__box {
+        margin-bottom: 15px;
+    }
+    .last-block__icons {
+        padding-right: 0;
+    }
+    .icon__text {
+        font-size: 2.5vw;
+        width: 100%;
+        height: auto;
+    }
+    .last-block__company {
+        flex-direction: column;
+    }
+    .last-block__company_text {
+        font-size: 2vw;
+    }
+    .last-block__company_network {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 630px) {
