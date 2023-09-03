@@ -783,7 +783,7 @@ label {
     .bread-crumbs__menu {
        display: none;
     }
-    /*.bread-crumbs__menu.bread-crumbs__menu_active {
+    .bread-crumbs__menu.bread-crumbs__menu_active {
         right: 0;
         top: 0;
         height: 109vh;
@@ -791,7 +791,7 @@ label {
         flex-direction: column;
         align-items: center;
         background: #0000009c;
-        width: 50%;
+        width: 50vw;
         position: fixed;
         color: white;
         z-index: 1000;
@@ -801,15 +801,15 @@ label {
     }
     .bread-crumbs__menu.bread-crumbs__menu_active:hover {
         transform: scale(0);
-    }*/
+    }
     .bread-crumbs__menu_active::after {
         content: "\f057";
         font-family: "Font Awesome 6 free";
         font-weight: 900;
         position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 20px;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
     }
     .question__picture,
     .pasta,

@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Tasty food</title>
 </head>
 
 <body>
-    <
-    <
     <div class="top-header-block">
         <div class="container">
             <div class="header-block">
@@ -57,7 +56,7 @@
                     <button class="title-block__botton" type="submit">ORDER NOW</button>
                 </div>
                 <div class="title-block__item title-block__item_picture">
-                    <div class="plate"><img src="img/Place1.png" alt=""></div>
+                    <div data-wow-delay="1s" class="plate wow animate__animated animate__lightSpeedInRight"><img src="img/Place1.png" alt=""></div>
                     <div class="pasta"><img src="img/Pasta.png" alt=""></div>
                     <div class="basilica"><img src="img/Leaf1.png" alt=""></div>
                     <div class="tomato"><img src="img/Tomato.png" alt=""></div>
@@ -79,7 +78,7 @@
             <div class="choose-block__dish">
                 <div class="choose-block__boxes">
                     <div class="choose-block__box">
-                        <img class="choose-block__food" src="img/Place3.png" alt="">
+                        <img data-wow-delay="0.5s" class="choose-block__food wow animate__animated animate__backInRight" src="img/Place3.png" alt="">
                         <div class="choose-block__header">
                             <p class="choose-block__name">LOREM IPSUM DOLOR</p>
                             <p class="choose-block__description">Lorem ipsum, dolor sit amet consectetur
@@ -88,7 +87,7 @@
                         </div>
                     </div>
                     <div class="choose-block__box">
-                        <img class="choose-block__food" src="img/Bread.png" alt="">
+                        <img data-wow-delay="1s" class="choose-block__food wow animate__animated animate__backInRight" src="img/Bread.png" alt="">
                         <div class="choose-block__header">
                             <p class="choose-block__name">LOREM IPSUM DOLOR</p>
                             <p class="choose-block__description">Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -97,7 +96,7 @@
                         </div>
                     </div>
                     <div class="choose-block__box">
-                        <img class="choose-block__food" src="img/Place2.png" alt="">
+                        <img data-wow-delay="1.5s" class="choose-block__food wow animate__animated animate__backInRight" src="img/Place2.png" alt="">
                         <div class="choose-block__header">
                             <p class="choose-block__name">LOREM IPSUM DOLOR</p>
                             <p class="choose-block__description">Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -124,7 +123,7 @@
             <div class="drawing">
                 <div class="drawing__item">
                     <img class="drawing__food" src="img/Image1.png" alt="">
-                    <div class="drawing__fd"><img src="img/Image.png" alt=""></div>
+                    <div data-wow-delay="1s" class="drawing__fd wow animate__animated animate__heartBeat"><img src="img/Image.png" alt=""></div>
                     <img class="drawing__food" src="img/Image2.png" alt="">
                 </div>
                 <div class="drawing__item">
@@ -225,6 +224,10 @@
             </div>
         </div>
     </div>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
